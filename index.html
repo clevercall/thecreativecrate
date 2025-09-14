@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Creative Crate | Gardening Subscription Boxes</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        .box-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .testimonial-card {
+            background: linear-gradient(to bottom right, #ffffff 0%, #f8fafc 100%);
+        }
+        .blog-card:hover .blog-title {
+            color: #4ade80;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="flex-shrink-0 flex items-center">
+                        <i data-feather="package" class="h-8 w-8 text-green-500"></i>
+                        <span class="ml-2 text-xl font-bold text-gray-900">The Creative Crate</span>
+                    </a>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="#" class="text-green-600 font-medium">Home</a>
+                    <a href="#boxes" class="text-gray-500 hover:text-gray-700 font-medium">Boxes</a>
+                    <a href="#how-it-works" class="text-gray-500 hover:text-gray-700 font-medium">How It Works</a>
+                    <a href="#testimonials" class="text-gray-500 hover:text-gray-700 font-medium">Testimonials</a>
+                    <a href="#blog" class="text-gray-500 hover:text-gray-700 font-medium">Blog</a>
+                    <a href="#" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-green-600 hover:bg-green-700">
+                        Subscribe Now
+                    </a>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-500" aria-controls="mobile-menu" aria-expanded="false">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-gradient">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl" data-aos="fade-down">
+                    <span class="block">Grow Your Garden</span>
+                    <span class="block text-green-600">One Box at a Time</span>
+                </h1>
+                <p class="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl" data-aos="fade-up" data-aos-delay="100">
+                    Monthly curated gardening subscription boxes delivered to your door. Everything you need to cultivate joy.
+                </p>
+                <div class="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8" data-aos="fade-up" data-aos-delay="200">
+                    <div class="rounded-md shadow">
+                        <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700 md:py-4 md:text-lg md:px-10">
+                            Get Started
+                        </a>
+                    </div>
+                    <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
+                        <a href="#boxes" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-green-600 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10">
+                            View Boxes
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Boxes -->
+    <div id="boxes" class="bg-white py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl" data-aos="fade-down">
+                    Our Monthly Subscription Boxes
+                </h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto" data-aos="fade-up">
+                    Each box is carefully curated with seasonal plants, tools, and expert guidance.
+                </p>
+            </div>
+
+            <div class="mt-16 grid gap-8 md:grid-cols-3">
+                <!-- Box 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300 box-hover" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-48 bg-green-100 flex items-center justify-center">
+                        <img src="http://static.photos/nature/640x360/1" alt="Starter Box" class="h-full w-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900">Starter Box</h3>
+                        <p class="mt-2 text-gray-600">Perfect for beginners with easy-to-grow plants and basic tools.</p>
+                        <div class="mt-4">
+                            <span class="text-2xl font-bold text-gray-900">$29.99</span>
+                            <span class="text-sm text-gray-500">/month</span>
+                        </div>
+                        <div class="mt-6">
+                            <a href="#" class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-600 hover:bg-green-700">
+                                Subscribe
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Box 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300 box-hover" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-48 bg-green-100 flex items-center justify-center">
+                        <img src="http://static.photos/nature/640x360/2" alt="Grower Box" class="h-full w-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900">Grower Box</h3>
+                        <p class="mt-2 text-gray-600">For intermediate gardeners with diverse plants and premium tools.</p>
+                        <div class="mt-4">
+                            <span class="text-2xl font-bold text-gray-900">$49.99</span>
+                            <span class="text-sm text-gray-500">/month</span>
+                        </div>
+                        <div class="mt-6">
+                            <a href="#" class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-600 hover:bg-green-700">
+                                Subscribe
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Box 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300 box-hover" data-aos="fade-up" data-aos-delay="300">
+                    <div class="h-48 bg-green-100 flex items-center justify-center">
+                        <img src="http://static.photos/nature/640x360/3" alt="Master Box" class="h-full w-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900">Master Box</h3>
+                        <p class="mt-2 text-gray-600">For expert gardeners with rare plants, organic seeds, and pro tools.</p>
+                        <div class="mt-4">
+                            <span class="text-2xl font-bold text-gray-900">$79.99</span>
+                            <span class="text-sm text-gray-500">/month</span>
+                        </div>
+                        <div class="mt-6">
+                            <a href="#" class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-600 hover:bg-green-700">
+                                Subscribe
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- How It Works -->
+    <div id="how-it-works" class="bg-gray-50 py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl" data-aos="fade-down">
+                    How It Works
+                </h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto" data-aos="fade-up">
+                    Getting your gardening box is simple and rewarding
+                </p>
+            </div>
+
+            <div class="mt-16 grid gap-8 md:grid-cols-3">
+                <!-- Step 1 -->
+                <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-md bg-green-100 text-green-600">
+                        <i data-feather="shopping-cart" class="h-6 w-6"></i>
+                    </div>
+                    <h3 class="mt-4 text-lg font-medium text-gray-900">Choose Your Box</h3>
+                    <p class="mt-2 text-base text-gray-500">
+                        Select from our Starter, Grower, or Master subscription boxes based on your gardening level.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-md bg-green-100 text-green-600">
+                        <i data-feather="calendar" class="h-6 w-6"></i>
+                    </div>
+                    <h3 class="mt-4 text-lg font-medium text-gray-900">Receive Monthly Delivery</h3>
+                    <p class="mt-2 text-base text-gray-500">
+                        Get a carefully curated box delivered to your door each month with seasonal plants and tools.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-md bg-green-100 text-green-600">
+                        <i data-feather="sun" class="h-6 w-6"></i>
+                    </div>
+                    <h3 class="mt-4 text-lg font-medium text-gray-900">Grow & Enjoy</h3>
+                    <p class="mt-2 text-base text-gray-500">
+                        Follow our expert guides to nurture your plants and watch your garden flourish.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div id="testimonials" class="bg-white py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl" data-aos="fade-down">
+                    What Our Customers Say
+                </h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto" data-aos="fade-up">
+                    Join thousands of happy gardeners growing with us
+                </p>
+            </div>
+
+            <div class="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <!-- Testimonial 1 -->
+                <div class="rounded-lg p-6 testimonial-card shadow-sm" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center">
+                        <img class="h-10 w-10 rounded-full" src="http://static.photos/people/200x200/1" alt="Sarah J.">
+                        <div class="ml-4">
+                            <h4 class="text-sm font-bold text-gray-900">Sarah J.</h4>
+                            <div class="flex mt-1">
+                                <i data-feather="star" class="h-4 w-4 text-yellow-400 fill-current"></i>
+                                <i data-feather="star" class="h-4 w-4 text-yellow-400 fill-current"></i>
+                                <i data-feather="star" class="h-4 w-4 text-yellow-400 fill-current"></i>
+                                <i data-feather="star" class="h-4 w-4 text-yellow-400 fill-current"></i>
+                                <i data-feather="star" class="h-4 w-4 text-yellow-400 fill-current"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-gray-600">
+                        "The Starter Box was perfect for me as a beginner. The instructions were so clear and my plants are thriving!"
+                    </p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="rounded-lg p-6 testimonial-card shadow-sm" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center">
+                        <img class="h-10 w-10 rounded-full" src="http://static.photos/people/200x200/2" alt="Michael T.">
+                        <div class="ml-4">
+                            <h4 class="text-sm font-bold text-gray-900">Michael T.</h4>
+                            <div class="flex mt-1">
+                                <i data-feather="star" class="h-4 w-4 text-yellow-400 fill-current"></i>
+                                <i data-feather="star" class="h-4 w-4 text-yellow-400 fill-current"></i>
+                                <i data-feather="star" class="h-4 w-4 text-yellow-400 fill-current"></i>
+                                <i data-feather="star" class="h-4 w-4 text-yellow-400 fill-current"></i>
+                                <i data-feather="star" class="h-4 w-4 text-yellow-400 fill-current"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-gray-600">
+                        "I've been subscribed to the Grower Box for 6 months and my balcony has transformed into a mini jungle!"
+                    </p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="rounded-lg p-6 testimonial-card shadow-sm" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center">
+                        <img class="h-10 w-10 rounded-full" src="http://static.photos/people/200x200/3" alt="Emma L.">
+                        <div class="ml-4">
+                            <h4 class="text-sm font-bold text-gray-900">Emma L.</h4>
+                            <div class="flex mt-1">
+                                <i data-feather="star" class="h-4 w-4 text-yellow-400 fill-current"></i>
+                                <i data-feather="star" class="h-4 w-4 text-yellow-400 fill-current"></i>
+                                <i data-feather="star" class="h-4 w-4 text-yellow-400 fill-current"></i>
+                                <i data-feather="star" class="h-4 w-4 text-yellow-400 fill-current"></i>
+                                <i data-feather="star" class="h-4 w-4 text-yellow-400 fill-current"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-gray-600">
+                        "The Master Box introduced me to plants I never would have tried on my own. The quality is exceptional."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog Preview -->
+    <div id="blog" class="bg-gray-50 py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl" data-aos="fade-down">
+                    Gardening Tips & Stories
+                </h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto" data-aos="fade-up">
+                    Learn from our experts and community
+                </p>
+            </div>
+
+            <div class="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <!-- Blog Post 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md blog-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-48 bg-green-100">
+                        <img src="http://static.photos/nature/640x360/4" alt="Blog post" class="h-full w-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500">
+                            <span>May 15, 2023</span>
+                            <span class="mx-1">•</span>
+                            <span>5 min read</span>
+                        </div>
+                        <h3 class="blog-title mt-2 text-xl font-bold text-gray-900 transition-colors duration-300">
+                            Beginner's Guide to Container Gardening
+                        </h3>
+                        <p class="mt-3 text-gray-600">
+                            Learn how to start your garden in small spaces with these easy container gardening tips.
+                        </p>
+                        <div class="mt-4 flex items-center">
+                            <img class="h-10 w-10 rounded-full" src="http://static.photos/people/200x200/4" alt="Author">
+                            <div class="ml-3">
+                                <p class="text-sm font-medium text-gray-900">Jessica Green</p>
+                                <p class="text-sm text-gray-500">Head Gardener</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md blog-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-48 bg-green-100">
+                        <img src="http://static.photos/nature/640x360/5" alt="Blog post" class="h-full w-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500">
+                            <span>April 28, 2023</span>
+                            <span class="mx-1">•</span>
+                            <span>7 min read</span>
+                        </div>
+                        <h3 class="blog-title mt-2 text-xl font-bold text-gray-900 transition-colors duration-300">
+                            The Best Plants for Low-Light Apartments
+                        </h3>
+                        <p class="mt-3 text-gray-600">
+                            Don't let limited sunlight stop you from having a thriving indoor garden.
+                        </p>
+                        <div class="mt-4 flex items-center">
+                            <img class="h-10 w-10 rounded-full" src="http://static.photos/people/200x200/5" alt="Author">
+                            <div class="ml-3">
+                                <p class="text-sm font-medium text-gray-900">David Bloom</p>
+                                <p class="text-sm text-gray-500">Indoor Plant Specialist</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md blog-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="h-48 bg-green-100">
+                        <img src="http://static.photos/nature/640x360/6" alt="Blog post" class="h-full w-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500">
+                            <span>April 10, 2023</span>
+                            <span class="mx-1">•</span>
+                            <span>4 min read</span>
+                        </div>
+                        <h3 class="blog-title mt-2 text-xl font-bold text-gray-900 transition-colors duration-300">
+                            Organic Pest Control Solutions
+                        </h3>
+                        <p class="mt-3 text-gray-600">
+                            Keep your garden healthy without harmful chemicals with these natural pest control methods.
+                        </p>
+                        <div class="mt-4 flex items-center">
+                            <img class="h-10 w-10 rounded-full" src="http://static.photos/people/200x200/6" alt="Author">
+                            <div class="ml-3">
+                                <p class="text-sm font-medium text-gray-900">Rachel Organic</p>
+                                <p class="text-sm text-gray-500">Organic Gardening Expert</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-10 text-center" data-aos="fade-up">
+                <a href="#" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700">
+                    View All Articles
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="bg-green-600">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+            <h2 class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl" data-aos="fade-right">
+                <span class="block">Ready to grow with us?</span>
+                <span class="block text-green-200">Start your gardening journey today.</span>
+            </h2>
+            <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0" data-aos="fade-left">
+                <div class="inline-flex rounded-md shadow">
+                    <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-green-600 bg-white hover:bg-green-50">
+                        Get Started
+                    </a>
+                </div>
+                <div class="ml-3 inline-flex rounded-md shadow">
+                    <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-500 bg-opacity-60 hover:bg-opacity-70">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-900 tracking-wider uppercase">Shop</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="#" class="text-base text-gray-600 hover:text-green-600">Subscription Boxes</a></li>
+                        <li><a href="#" class="text-base text-gray-600 hover:text-green-600">Gift Cards</a></li>
+                        <li><a href="#" class="text-base text-gray-600 hover:text-green-600">Plant Supplies</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-900 tracking-wider uppercase">Company</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="#" class="text-base text-gray-600 hover:text-green-600">About Us</a></li>
+                        <li><a href="#" class="text-base text-gray-600 hover:text-green-600">Sustainability</a></li>
+                        <li><a href="#" class="text-base text-gray-600 hover:text-green-600">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-900 tracking-wider uppercase">Support</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="#" class="text-base text-gray-600 hover:text-green-600">Help Center</a></li>
+                        <li><a href="#" class="text-base text-gray-600 hover:text-green-600">Shipping Info</a></li>
+                        <li><a href="#" class="text-base text-gray-600 hover:text-green-600">Returns</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-900 tracking-wider uppercase">Connect</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="#" class="text-base text-gray-600 hover:text-green-600">Instagram</a></li>
+                        <li><a href="#" class="text-base text-gray-600 hover:text-green-600">Facebook</a></li>
+                        <li><a href="#" class="text-base text-gray-600 hover:text-green-600">Pinterest</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between">
+                <p class="text-base text-gray-500">
+                    &copy; 2023 The Creative Crate. All rights reserved.
+                </p>
+                <div class="mt-4 md:mt-0 flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-green-600">
+                        <i data-feather="instagram" class="h-6 w-6"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-green-600">
+                        <i data-feather="facebook" class="h-6 w-6"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-green-600">
+                        <i data-feather="twitter" class="h-6 w-6"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        feather.replace();
+    </script>
+</body>
+</html>
